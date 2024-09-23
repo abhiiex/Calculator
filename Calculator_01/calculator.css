@@ -1,0 +1,78 @@
+.calculator {
+    padding: 10px;
+    border-radius: 1em;
+    height: 380px;
+    width: 400px;
+    margin: auto;
+    /* // For Multicolor background */
+    background-image: linear-gradient(#00BFFF,#b8eff6,#ADD8E6, #d3f5f9, #74ccf4);
+    box-shadow: 8px 5px 5px #a8b2ca;
+}
+
+.display-box {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #f3f6f4;
+    border:solid rgb(0, 255, 255) 3px;
+    border-radius: 7px;
+    width: 87%;
+    height: 68%;
+    border:none;
+}
+
+/* // All Input Button Except clearBtn // */
+input {
+    font-family: 'Orbitron', sans-serif;
+    border:solid rgb(0, 255, 255) 3px;
+    width: 70%;
+    font-size:20px;
+    border-radius: 7px;
+    height: 45%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 12px 12px;
+    transition: .4s ease-in;
+    z-index: 1;
+    color:red;
+    border:none;
+}
+
+button::before ,
+button::after{
+    position: absolute;
+    content: '';
+    z-index: -1;
+}
+
+
+.button-1:hover {
+    background-color: #fff;
+    box-shadow: 0 0 5px #0ff , 0 0 25px #0ff ,
+    0 0 50px #0ff , 0 0 200px #0ff ;
+}
+
+/* // for equal button */
+.button-2:hover {
+    background-color: #fff;
+    box-shadow: 0 0 5px #0ff , 0 0 25px #0ff ,
+    0 0 50px #0ff , 0 0 200px #0ff ;
+}
+
+/* // for clear btn */
+.clearBtn:hover {
+    color:black;
+    background-color: #fff;
+    text-decoration:none;
+}
+.clearBtn {
+    background-color: red;
+    color:white;
+    padding:5px 15px 5px 15px;
+}
+
+
+/*  
+    input:active {
+    background: #000000;
+    -webkit-box-shadow: inset 20px 20px 5px #c1c1c1;
+    -moz-box-shadow: inset 20px 20px 5px #c1c1c1;
+    box-shadow: inset 20px 20px 5px #c1c1c1;
+} 
+*/
